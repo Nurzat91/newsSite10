@@ -6,3 +6,7 @@ export interface NewsProps {
 }
 
 export type NewsPropsWithoutId = Omit<NewsProps, 'id'>;
+
+export interface NewsList {
+  [id: string]: NewsPropsWithoutId;
+}
