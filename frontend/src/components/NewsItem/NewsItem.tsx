@@ -29,6 +29,7 @@ const ImageCardMedia = styled(CardMedia)({
 const NewsItem: React.FC<Props> = ({ data, deleteLoading, onDelete }) => {
   const cardImage = data.image ? apiURL + '/' + data.image : noImageAvailable;
 
+
   return (
     <Grid item xs={12} sm={12} md={5} lg={10}>
       <Card sx={{ display: 'flex', height: '200px' }}>
@@ -42,7 +43,7 @@ const NewsItem: React.FC<Props> = ({ data, deleteLoading, onDelete }) => {
                 <ArrowForwardIcon />
               </IconButton>
             </Typography>
-            <Button onClick={onDelete} disabled={deleteLoading === true}>
+            <Button onClick={onDelete} disabled={deleteLoading === true} type="button">
               Delete
             </Button>
           </Grid>

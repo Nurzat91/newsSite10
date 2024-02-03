@@ -10,3 +10,8 @@ export type NewsPropsWithoutId = Omit<NewsProps, 'id'>;
 export interface NewsList {
   [id: string]: NewsPropsWithoutId;
 }
+
+export interface AddComment{
+  name: string;
+  content: string;
+}

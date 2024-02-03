@@ -3,7 +3,7 @@ import Layout from './components/Layout/Layout';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import News from './containers/News/News';
 import NewsPage from './components/NewsPage/NewsPage';
-import PostPage from './components/PostPage/PostPage';
+import PostPage from './containers/PostPage/PostPage';
 
 function App() {
 

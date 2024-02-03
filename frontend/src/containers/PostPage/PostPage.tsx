@@ -1,8 +1,10 @@
+import AddComments from '../../components/AddComment/AddComments';
+
 
 const PostPage = () => {
   return (
     <div>
-      PostPage
+      <AddComments/>
     </div>
   );
 };
